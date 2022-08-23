@@ -17,7 +17,7 @@ select count(*) from sakila.rental;		-- 16.044 times the films have been rented.
 
 -- 5. What is the shortest and longest rental period?
 
-select  min(timediff(return_date, rental_date)) as min_rental_period, max(timediff(return_date, rental_date)) as max_rental_period from sakila.rental;  	-- The shortest rental period is 18:00:00 and longest rental period is 221:59:00.
+select  min(timediff(return_date, rental_date)) as min_rental_period, max(timediff(return_date, rental_date)) as max_rental_period from sakila.rental;  	-- The shortest rental period is 18:00:00 and the longest rental period is 221:59:00.
 
 -- 6. What are the shortest and longest movie duration? Name the values max_duration and min_duration.
 
